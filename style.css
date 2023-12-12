@@ -1,0 +1,427 @@
+/* GOOGLE FONTS IMPORTED DONE*/
+@import url('https://fonts.googleapis.com/css2?family=Cardo&family=Lato:wght@300&family=Roboto+Mono:wght@200;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cardo&family=Didact+Gothic&family=Lato:wght@300&family=Roboto+Mono:wght@200;300&display=swap');
+
+
+/* BASIC STYLING DONE*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+h1, h2, h3 {
+    font-family: 'Cardo', serif;
+}
+p, span, a, h4 {
+    font-family: 'Didact Gothic', sans-serif;
+    font-weight: lighter;
+}
+h1{
+    font-size: 80px;
+    letter-spacing: 3px;
+    font-weight: lighter;
+}
+h2{
+    font-size: 36px;
+    font-weight: lighter;
+}
+h4 {
+    font-size: 22px;
+    font-weight: lighter;
+}
+body{
+    /*background-color: #2a4cab;*/
+    background-color: #F1F0F0;
+}
+
+
+
+
+/* NAV BAR SECTION */
+/* Needs JS logic */
+.navbar {
+    display: flex; /* Use Flexbox */
+    list-style: none;
+    background-color: #F1F0F0; /* Background color for the navbar */
+    justify-content: space-between; /* Align items horizontally with space in-between */
+    align-items: center; /* Center items vertically */
+    padding: 20px 40px; /* Add some padding for spacing */
+    justify-content: flex-end;
+    position: fixed; /* Fix the navbar at the top of the page */
+    top: 0; /* Stick it to the top */
+    width: 96.5%; /* Take up the full width of the viewport */
+    z-index: 100; /* Ensure the navbar appears above other elements */
+}
+.navbar li a {
+    color: #333; /* Text color for the links */
+    text-decoration: none; /* Remove underline */
+    margin: 0 0px; /* Add spacing between links */
+    font-size: 20px;
+}
+.navbar li{
+    transition: transform 0.1s ease;
+}
+.navbar li:hover{
+    transform: scale(1.05);
+    font-weight: 900;
+    text-decoration: underline;
+}
+.active{
+    transform: scale(1.05);
+    font-weight: bolder;
+    text-decoration: underline;
+}
+.navbar li:not(:last-child) {
+    margin-right: 50px;
+}
+p {
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+
+
+/* HERO SECTION */
+/* Fix responsiveness */
+.main-container {
+    display: flex;
+    padding-top: 80px;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between; /* Distribute space between items */
+}
+.text {
+    flex: 60%;
+    padding: 30px 0px 20px 100px;
+    box-sizing: border-box;
+}
+.profile-pic {
+    flex: 40%;
+    padding: 40px 80px 40px 20px;
+    box-sizing: border-box;
+}
+.profile-pic img {
+    width: 95%; /* Maximum width is 100% of its container (50% of the screen) */
+    height: auto; /* Maintain the aspect ratio */
+    display: block; /* Remove extra space below the image */
+    border-radius: 10px;
+}
+.text h1{
+    margin-bottom: 25px;
+}
+.text h2{
+    margin-bottom: 15px;
+    margin-left: 15px;
+}
+.text h4{
+    margin-bottom: 85px;
+    margin-left: 15px;
+}
+.links img{
+    transition: transform 0.1s ease;
+    margin-right: 25px;
+    margin-left: 15px;
+}
+.links img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.links a{
+    text-decoration: none;
+}
+
+
+
+/* ABOUT ME SECTION */
+.about-me-section{
+    height: auto;
+    padding: 30px 45px 0px 45px;
+}
+.about-me-container{
+    height: fit-content;
+}
+.question-container{
+    padding: 20px 20px 0px 20px;
+}
+.prompt{
+    margin-left: 7px;
+    padding: 20px 20px 0px 20px;
+}
+.answer{
+    padding: 10px 20px 20px 20px;
+}
+
+
+
+/* SKILSS SECTION */
+/* Fix responsiveness */
+.skills{
+    height: fit-content;
+    padding: 90px 20px 0px 20px;    
+}
+.container-outer-skills{
+    padding: 20px;
+}
+.container-inner-skills{    
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+}
+.skills-text-area{    
+    flex: 35%;
+    display: flex;
+    align-items: center;
+}
+.skills-text-area h3{
+    font-size: 1.5rem;
+    margin-left: 40px;
+}
+.skills-logo-area{
+    flex: 65%;
+    display: flex;
+    flex-direction: row;
+    gap: 3em;
+    flex-wrap: wrap;
+}
+.skills-logo-area img{
+    height: 5rem;
+    width: 5rem;
+}
+/* SECOND SECTION FOR SKILLS --- DONE */
+.container-skills-snd{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 100px;
+}
+.card{
+    background-color: #eae9e9;
+    padding: 10px;
+    margin: 15px;
+    min-width: 350px;
+    max-width: 350px;
+    height: fit-content;
+    border: #333 1px solid;
+    border-radius: 10px;
+}
+.title-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    gap: 10px;
+}
+.title-flex img{
+    height: 40px;
+    width: 40px;
+}
+
+
+
+
+/* PROJECTS SECTION */
+.projects-section-2{
+    padding: 20px;
+    margin-bottom: 70px;
+}
+.add-margin{
+    margin-top: 50px;
+}
+.project-outer-container{    
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.project-inner-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+    border-radius: 10px;
+    background-color: #eae9e9;
+    padding: 20px;
+}
+.reversed-flex{
+    flex-direction: row-reverse;
+}
+.flex-item-2{    
+    display: flex;
+    border-radius: 10px;
+}
+.flex-item-2.project-description-2{
+    flex: 40%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.flex-item-2.project-img-2{
+    flex: 60%;
+    justify-content: center;
+    padding: 20px;
+    max-width: 100%;
+}
+.flex-item-2 img{
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    border-radius: 10px;
+}
+.flex-item-2 h3{
+    margin-bottom: 10px;
+}
+
+
+
+
+/* CONTACT ME SECTION */
+.contact-me-section{
+    display: flex;    
+    justify-content: center;
+    height: 100vh;
+    padding: 100px;
+}
+.contact-me-container{
+    padding: 20px;
+    background-color: #eae9e9;
+    border: #333 1px solid;
+    border-radius: 10px;
+    height: fit-content;
+}
+.contact-me-title{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+.input-text-contact input{
+    margin-bottom: 15px;
+}
+.contact-me-btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.contact-me-btn input{
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 1em;
+    width: 30%;
+    margin: 0.25em;
+    border: none;
+    outline: none;
+    background-color: rgb(134, 184, 235);
+    transition: transform 0.5s ease;
+    cursor: pointer;
+}
+.contact-me-btn input:hover{
+    transform: scale(1.1);
+    background-color: rgb(102, 169, 213);    
+}
+
+
+
+footer{
+    background-color: #eae9e9;
+    height: auto;
+}
+.footer-container{
+    display: flex;
+    padding: 1rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+}
+.footer-links{    
+    display: flex;    
+    gap: 30px;
+}
+.footer-links img{
+    transition: transform 0.1s ease;
+    margin-right: 25px;
+    margin-left: 15px;
+}
+.footer-links img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.foorter-links a{
+    text-decoration: none;
+}
+.footer-info{   
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.footer-info span{
+    margin-left: 5px;   
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+
+
+
+@media screen and (max-width: 1000px) {
+    /* CSS rules to apply when the viewport is 768 pixels wide or narrower */
+    .project-inner-container{
+        flex-direction: column;
+        height: auto;
+    }
+    .flex-item-2 img{
+        height: 80%;
+        width: auto;
+        max-width: 100%;
+    }
+    .main-container{
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+    }
+    .profile-pic {   
+        display: flex;
+        align-items: center;
+        justify-content: center;     
+        padding: 40px;
+        box-sizing: border-box;
+    }
+    .profile-pic img {
+        width: 50%; /* Maximum width is 100% of its container (50% of the screen) */
+        height: auto;
+        max-width: 100%; /* Maintain the aspect ratio */
+        display: block; /* Remove extra space below the image */
+    }
+}
+@media screen and (max-width: 700px) {
+    .container-inner-skills{    
+        flex-direction: column;
+        gap: 20px;
+    }
+    .skills-text-area{    
+        justify-content: center;
+        gap: 50px;
+    }
+    .skills-logo-area{
+        justify-content: center;
+    }
+    .footer-container{
+        flex-direction: column;   
+        gap: 20px;
+    }
+    .footer-info{   
+        align-items: center;
+        flex-direction: column;
+        
+    }
+}
+
